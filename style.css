@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+
+    padding: 2rem;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 650px;
+    background-color: hsl(0, 0%, 100%);
+
+    padding: 3rem 3rem 2rem 3rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-size: 42px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 24px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+li::marker {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+ul, ol {
+    padding: 0;
+    margin-left: 20px;
+}
+
+li {
+    font-family: "Outfit", sans-serif;
+    line-height: 2;
+    color: hsl(30, 10%, 34%);
+    padding-left: 1rem;
+    font-size: 16px;
+}
+
+.desc, .nutrition-info {
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition-info {
+    margin: 1.5rem 0;
+}
+
+.desc {
+    font-weight: 500;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+
+    padding: .5rem 2rem;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.ingredients, .instructions {
+    margin: 1.5rem 0;
+}
+
+.nutrition {
+    margin-top: 1.5rem;
+}
+
+table {
+    width: 100%;
+}
+
+.nutri-info {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+
+td {
+    color: hsl(30, 10%, 34%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+    font-size: 16px;
+}
+
+.last {
+    border: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+@media  (max-width: 730px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        width: 375px;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    img {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .content-container {
+        padding: 2rem 3rem;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .desc {
+        font-weight: 400;
+    }
+
+}
